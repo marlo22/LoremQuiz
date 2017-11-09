@@ -1,0 +1,29 @@
+//Theme colors
+$primary_1: #01425a;
+$font_1: #b7e0ee;
+$darken_1: darken($primary_1, 10%);
+
+$primary_2: #b7c7cd;
+$font_2: #0d2b36;
+$darken_2: darken($primary_2, 10%);
+
+$primary_success: #017140;
+$font_success: #a6f6d3;
+$darken_success: darken($primary_success, 10%);
+
+$primary_incorrect: #a10101;
+$font_incorrect: #ffe0e0;
+$darken_incorrect: darken($primary_incorrect, 20%);
+
+//Components colors
+$progress_bar: darken($primary_1, 5%);
+
+//Breakpoints
+$sm: "(min-width: 650px)";
+$smPortrait: "(min-width: 500px) and (max-width: 899px) and (orientation: portrait)";
+$lg: "(min-width: 900px) and (min-height: 600px)";
+
+//Dimensions
+
+//Flex-start padding
+$mainFlexStart: calc(6.1rem + 1rem);

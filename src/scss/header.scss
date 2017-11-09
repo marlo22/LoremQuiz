@@ -1,0 +1,30 @@
+@import "vars.scss";
+
+header {
+  align-items: center;
+  background-color: $primary_1;
+  box-sizing: border-box;
+  color: $font_1;
+  display: flex;
+  flex-wrap: wrap;
+  height: 6.1rem;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  position: fixed;
+    top: 0;
+    left: 0;
+  z-index: 999;
+  width: 100%;
+  @media #{$lg} {
+    position: static;
+  }
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  .btn-transparent {
+    font-size: 2rem;
+  }
+}

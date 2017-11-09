@@ -1,0 +1,23 @@
+
+.fa-heart:before { content: '\f004'; } /* '' */
+.fa-check:before { content: '\f00c'; } /* '' */
+.fa-close:before { content: '\f00d'; } /* '' */
+.fa-clock-o:before { content: '\f017'; } /* '' */
+.fa-refresh:before { content: '\f021'; } /* '' */
+.fa-chevron-left:before { content: '\f053'; } /* '' */
+.fa-plus-circle:before { content: '\f055'; } /* '' */
+.fa-times-circle:before { content: '\f057'; } /* '' */
+.fa-check-circle:before { content: '\f058'; } /* '' */
+.fa-question-circle:before { content: '\f059'; } /* '' */
+.fa-plus:before { content: '\f067'; } /* '' */
+.fa-exclamation-triangle:before { content: '\f071'; } /* '' */
+.fa-trophy:before { content: '\f091'; } /* '' */
+.fa-money:before { content: '\f0d6'; } /* '' */
+.fa-angle-double-left:before { content: '\f100'; } /* '' */
+.fa-angle-double-right:before { content: '\f101'; } /* '' */
+.fa-angle-left:before { content: '\f104'; } /* '' */
+.fa-angle-right:before { content: '\f105'; } /* '' */
+.fa-spinner:before { content: '\f110'; } /* '' */
+.fa-frown:before { content: '\f119'; } /* '' */
+.fa-calculator:before { content: '\f1ec'; } /* '' */
+.fa-snowflake-o:before { content: '\f2dc'; } /* '' */

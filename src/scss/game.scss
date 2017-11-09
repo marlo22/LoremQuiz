@@ -1,0 +1,115 @@
+@import "vars.scss";
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.timer {
+  margin: 1rem;
+}
+
+.question {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  @media #{$sm} {
+    font-size: 2rem;
+  }
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    width: 100%;
+    @media #{$sm} {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      &:nth-child(odd) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.selected {
+  background-color: $primary_1;
+  color: $font_1;
+  font-weight: 400;
+  &:hover {
+    background-color: $primary_1;
+  }
+}
+
+.correct {
+  animation: correctAnswer .3s infinite;
+  background-color: $primary_success;
+  border-color: $darken_success;
+  color: $font_success;
+}
+
+@keyframes correctAnswer {
+  from {
+    background-color: $darken_2;
+    color: $font_2;
+  }
+  to {
+    background-color: $primary_success;
+  }
+}
+
+.incorrect {
+  background-color: $primary_incorrect;
+  border-color: $darken_incorrect;
+  color: $font_incorrect;
+  &:hover {
+    background-color: $primary_incorrect;
+  }
+}
+
+.game-status-list {
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+.game-progress {
+  align-items: center;
+  display: flex;
+  width: 50%;
+  span {
+    margin-right: 1rem;
+  }
+  @media #{$sm} {
+    max-width: 15rem;
+    width: 15rem;
+  }
+}
+
+.tips-list {
+  text-align: center;
+  width: 100%;
+  li {
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem;
+    i[class*=angle] {
+      font-size: 1.2em;
+    }
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.inactive {
+  color: darken($font_1, 50%);
+}
