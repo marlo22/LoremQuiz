@@ -21,6 +21,7 @@ main {
   min-height: 100vh;
   padding: 0 1rem;
   padding-top: $mainFlexStart;
+  padding-bottom: 1rem;
   @media #{$smPortrait} {
     align-content: flex-start;
     padding-top: $mainFlexStart;
@@ -64,12 +65,10 @@ main {
 
 .settings {
   align-items: flex-start;
-  padding: 0;
 }
 
 .highscores {
   align-items: flex-start;
-  padding: calc(6.1rem + 1rem);
 }
 
 @media #{$lg} {

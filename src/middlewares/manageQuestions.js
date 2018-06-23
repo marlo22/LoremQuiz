@@ -19,7 +19,7 @@ const manageQuestions = (state) => (next) => (action) => {
 
       let xhttp = new XMLHttpRequest();
 
-      xhttp.open("GET", `${API_URL}/${drawnCategory}/?filter=level,eq,${level}`, true);
+      xhttp.open("GET", `${API_URL}/${drawnCategory}/?filter[]=level,eq,${level}&filter[]=accepted,eq,true`, true);
       xhttp.send();
 
       xhttp.onload = (e) => {
